@@ -4,7 +4,7 @@
 
 	body {			overflow-y: scroll;
 					font-family: "Georgia", Tahoma, Sans-Serif;
-			
+					margin:0 auto;
 					background: #e1e5e8;}
 	h2 {				padding-top:10px;}
 	img, video {		max-width:100%;}
@@ -21,7 +21,7 @@
 					margin:0 auto;
 					padding-bottom:15px;
 					margin-bottom:-25px;
-					margin-top:-20px;
+					
 					background: url(pics/bg.gif) repeat-y center 0;
 					background-size:930px;
 	}
@@ -129,7 +129,9 @@
 ---------------------------------------------------------------------- */
 	.italic{font-style: italic;
 			font-size:1.2em;}
-		
+	#footer {
+			margin-left:20px;
+	}
 	/** CSS för mobila enheter*
 ---------------------------------------------------------------------- */
 @media screen and (max-width:480px) 

@@ -1,0 +1,19 @@
+﻿@charset "UTF-8";
+
+#menu {display:none; } 
+#page video{display:none;}
+#columnLeft{border:none; width:100%;}
+body {font-family: "Times New Roman", serif; font-size:1.5em;}
+#tabell {background:#FFF;}
+.logo {display:none;}
+.left {display:none;}
+
+a:link:after, a:visited:after {
+   content: " (http://" attr(href) ") ";
+   }
+#kontaktform {font-size:0.8em;}
+#button {display:none;}
+ 
+ a {text-decoration:none; color:black;}
+#labb1 , #bunny {page-break-before:always; padding-top:30px;}
+#mainBlog ol li {line-height:28px;}

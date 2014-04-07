@@ -1,0 +1,166 @@
+﻿@charset "UTF-8";
+@import url(http://fonts.googleapis.com/css?family=Volkhov:400,700);
+
+
+	body {			overflow-y: scroll;
+					font-family: "Georgia", Tahoma, Sans-Serif;
+			
+					background: #e1e5e8;}
+	h2 {				padding-top:10px;}
+	img, video {		max-width:100%;}
+	
+	article, aside, details, figcaption, figure, 
+	footer, header, hgroup, menu, nav, section{ display: block; } 
+
+		/** Anger sidans storlek och placering*
+---------------------------------------------------------------------- */	
+	#page {			width:930px; 
+					min-height:100%; 
+					height:auto !important;  
+					height: 100%; 						
+					margin:0 auto;
+					padding-bottom:15px;
+					margin-bottom:-25px;
+					margin-top:-20px;
+					background: url(pics/bg.gif) repeat-y center 0;
+					background-size:930px;
+	}
+
+		/** Header*
+---------------------------------------------------------------------- */
+	#header {  		display:block; height:200px; width:92.5%; margin: 0 auto; padding-top:25px;}
+	#header h1 {		margin-top:70px; float:left; padding-left:12px; 	color:#484759;}
+		
+		/** Inställningar för den högra kolumnen*
+---------------------------------------------------------------------- */
+	#column-right { width:35%;float:right; overflow:hidden;  } 
+	
+		/** Menyn*
+---------------------------------------------------------------------- */
+	#menu a {		line-height:2em;
+					display:block;					
+					text-align: center;
+					text-decoration:none;
+					font-family: 'Volkhov', serif;
+					font-size:1.2em;
+					height:50px;
+					border-radius:0.5em;
+					margin-bottom:10px;
+					background: url('pics/menu.jpg') no-repeat;
+					text-indent:100%;
+					white-space:nowrap;
+					overflow:hidden;
+					}
+					
+	#menu a:link {	color:#FFF;					font-weight:bold;		
+					
+												letter-spacing:1px; }
+	#menu a:visited{ color:#FFF;}               
+												    
+	#menu a:hover{  	color:#0c3331;}
+	#menu a:active{ 	color:#FFF; border:none;}
+	#menu li {		border-radius:0.5em; 
+					width:250px; 		
+					background:#5B9692;
+					box-shadow: 5px 5px 2px #d5fcfa;}
+	
+	/*Startknapp*/
+	#menu .startKnapp a{ 				}
+	#menu .startKnapp a:hover{ 			background-position:0 100%;  }
+	#menu .active a{						background-position:0 100%;  }
+
+	
+	/*labbknapp*/
+	#menu .labbKnapp a{ 					background-position:-250px 0;}
+	#menu .labbKnapp a:hover{ 			background-position:-250px 100%;}
+	#menu .activeLabb a{ 				background-position:-250px 100%;}
+	
+	/*Presentationsknapp*/
+	#menu .presentationKnapp a{			background-position:-500px 0;}
+	#menu .presentationKnapp a:hover{	background-position:-500px 100%;}  
+	#menu .activePresentation a {		background-position:-500px 100%;}
+	
+	/*DailyScrumknapp*/
+	#menu .dailyKnapp a {					background-position:-750px 0;}
+	#menu .dailyKnapp a:hover { 			background-position:-750px 100%;}
+	#menu .dailyActive a{ 				background-position:-750px 100%;}
+
+	#menu ul {		list-style:none; 
+					line-height:1.5em; 
+					width:250px;
+					margin-left:-0.5em;
+					margin-top: 4.5em;
+									
+				}
+
+		/** Inställningar för den vänstra kolumnen*
+---------------------------------------------------------------------- */
+	#columnLeft {	min-height:500px; 	height:auto !important; 	width:62%;
+					margin-left:20px;	border-right:2px #5B9692 dotted; }
+					
+	#mainBlog {		margin-left:5%; 	margin-right:5%;  
+					overflow:hidden;}
+	
+	#mainBlog h3{ 	line-height:60px; width:100%; height:60px; padding-left:55px; 
+					background: url(pics/penna.jpg) no-repeat;}
+
+	#mainBlog li { 	font-weight:bold; 
+					line-height: 35px;}
+	
+	#mainBlog ol li{	font-weight:200;
+					line-height: 20px;}	
+		
+	#mainBlog dl {	font-weight:bold;}
+	#mainBlog dd {	font-weight:normal;
+					font-style:italic;}
+		
+	.datum {			font-family:"Courier New", Courier, monospace; width:350px;}
+	.logo {			float:right; }
+	.post { 			padding:15px;}
+	.right{ 		float:right;	padding:5px; 	background:white;   border:2px solid grey; 	margin:0 5px; 			margin-bottom:20px; 	margin-left:15px;}
+	.left {			float:left; 	padding:5px; 	background:white; 	border:2px solid grey; 	margin:5px 5px 5px 0; 	margin-right:15px; 		margin-bottom:20px; }
+	
+	#tabell {		background:#f4f4f4; border:2px solid #ddd; padding:15px; 
+					margin-top: 15px;	width:500px;
+					margin-bottom:45px;}
+	#tabell td, th{	padding:10px 10px 10px 10px;}
+	
+		/** mini-fix utseenden*
+---------------------------------------------------------------------- */
+	.italic{font-style: italic;
+			font-size:1.2em;}
+		
+	/** CSS för mobila enheter*
+---------------------------------------------------------------------- */
+@media screen and (max-width:480px) 
+{
+#page {				width:100%;
+					min-width:320px;
+	}
+#column-right { 		float:none; 			width:100%; 		overflow:hidden; 	margin-top:130px;} 
+#columnLeft { 		float:none; 			width:90%; 			overflow:hidden; 	border:none; } 
+#mainBlog {			margin:0 auto;			width:90%; }
+#header {			float:none;				padding-left:0;}
+#header h1 {			text-align:center; 		float:none; }
+#menu ul {			max-width:200px;		width:100%; 		margin:0 auto; 		margin-top:50px; }
+#menu li {			margin:0 auto; 			margin-left:-2.5em;}
+.logo {				display:block; 			margin:0 auto;		float:none; }
+.datum {				width:90%;}
+img {				max-width:80%;}
+video {				max-height:210px;}
+.left , .right {		float:none; 			margin:0 auto;}
+#mainBlog h3 {		padding-right:5px; 		line-height:30px;}
+.br {				display:inline;}
+#tabell{width:80%;}
+table, thead, tbody, th, td, tr { 
+		display: block; 
+	}
+#kontaktform {		width:90%; }
+textarea {			width:90%;  }
+.fleft {				float:none;}
+.label { 			width:80px; 
+					display:block; }
+.label2 { 			width:200px; 
+					display:block; }}
+
+

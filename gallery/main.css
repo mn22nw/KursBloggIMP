@@ -1,0 +1,89 @@
+﻿@charset "UTF-8";
+@import url(http://fonts.googleapis.com/css?family=Volkhov:400,700);
+
+
+	body {			margin:0 auto; padding:0;
+					overflow-y: scroll;
+					font-family: "Volkhov", Sans-Serif;			
+					background: #e1e5e8;
+					/* TESTAR GRADIENT BAKGRUND */
+					background: #87e0fd; /* Old browsers */
+					background: -moz-linear-gradient(-45deg, #87e0fd 0%, #a5deef 40%, #05abe0 100%); /* FF3.6+ */
+					background: -webkit-gradient(linear, left top, right bottom, color-stop(0%,#87e0fd), color-stop(40%,#a5deef), color-stop(100%,#05abe0)); /* Chrome,Safari4+ */
+					background: -webkit-linear-gradient(-45deg, #87e0fd 0%,#a5deef 40%,#05abe0 100%); /* Chrome10+,Safari5.1+ */
+					background: -o-linear-gradient(-45deg, #87e0fd 0%,#a5deef 40%,#05abe0 100%); /* Opera 11.10+ */
+					background: -ms-linear-gradient(-45deg, #87e0fd 0%,#a5deef 40%,#05abe0 100%); /* IE10+ */
+					background: linear-gradient(135deg, #87e0fd 0%,#a5deef 40%,#05abe0 100%); /* W3C */
+					filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#87e0fd', endColorstr='#05abe0',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */}
+	/** Anger sidans storlek och placering*
+---------------------------------------------------------------------- */
+	#page {	    		width:90%; margin:0 auto;
+						min-height:100%; 
+						height:auto !important;  
+						height: 100%; 
+						}
+	header {			min-height:100px; height:auto;
+						padding-bottom:15px;}
+	#column-right {		float:right; width:20%;}
+	#column-left {		margin-top:15px; 
+						width:80%;
+						height:100%;}
+	#footer {			height:50px;  clear:both; width:80%; text-align:center; line-height:50px;}
+	
+			/** Övergångar etc *
+---------------------------------------------------------------------- */
+	.row {		 overflow: visible }
+
+    ul.bilder li { display: inline; 
+				padding-left: 0;}
+  	ul.bilder a { background: #fff; 
+				display: inline; 
+				float: left; 
+				margin: 0 0 27px 30px; 
+				width: auto; 
+				padding: 10px 10px 15px; 
+				text-align: center; 
+				font-family: "Marker Felt", sans-serif; 
+				text-decoration: none; 
+				color: #333; 
+				font-size: 18px; 
+				-webkit-box-shadow: 0 3px 6px rgba(0,0,0,.25); 
+				-moz-box-shadow: 0 3px 6px rgba(0,0,0,.25); 
+				-webkit-transform: rotate(-2deg); 
+				-moz-transform: rotate(-2deg); 
+				-webkit-transition-property: -webkit-transform;
+				-moz-transition-property: -moz-transform;
+				-o-transition-property: -o-transform;
+				transition-property: transform; 
+				-webkit-transition: all 0.5s ease-in-out;
+				-moz-transition: all 0.5s ease-in-out;
+				-o-transition: all 0.5s ease-in-out;
+				transition: all 0.5s ease-in-out; }
+	  
+  @media screen and (max-width: 915px) {
+  #column-right {		float:none; width:90%; height:90px; clear:both;}
+     ul.bilder li a {
+        margin-left: 15px;} 
+    }
+		ul.bilder img {		display: block; 
+							width: 250px; 
+							margin-bottom: 12px; }
+		ul.bilder a:after { 	content: attr(title); font-family: "Volkhov", Sans-Serif;	}
+		
+		ul.bilder li:nth-child(even) a { 	-webkit-transform: rotate(2deg);  
+										-moz-transform: rotate(2deg); }
+		ul.bilder li:nth-child(3n) a { 	-webkit-transform: none; position: relative;  -moz-transform: none; }
+		ul.bilder li:nth-child(5n) a { 	-webkit-transform: rotate(5deg); position: relative; right: 5px;  -moz-transform: rotate(5deg); }
+		ul.bilder li:nth-child(8n) a {		position: relative; right: 5px; top: 8px; }
+		ul.bilder li a:hover, ul.bilder li a:focus { -webkit-transform: scale(1.5); 
+							-moz-transform: scale(1.5); 
+							-webkit-box-shadow: 0 3px 6px rgba(0,0,0,.5); 
+							-moz-box-shadow: 0 3px 6px rgba(0,0,0,.5); 
+							position: relative; 
+							z-index: 5; 
+							-moz-box-shadow: 2px 2px 10px 6px rgba(0,0,0,0.5);
+							-webkit-box-shadow:2px 2px 10px 6px rgba(0,0,0,0.5);
+							box-shadow: 2px 2px 10px 6px rgba(0,0,0,0.5);	}
+
+	
+		

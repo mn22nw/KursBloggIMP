@@ -1,0 +1,7 @@
+1. testa att trycka pa ok knappen utan något i - felmeddelande ok! 
+2. testa att div med video ploppar upp när en youtubelänkt läggs in - japp!
+3. testa att flytta runt diven - ok
+4. testa att kryssa diven - ok 
+5. testa att klistra in flera stycken - FAIL. Ej scroll, hoppa ut ur rutan helt i tjottahejti, fixa så höjd automatiskt. 
+
+- this field can't be empty.

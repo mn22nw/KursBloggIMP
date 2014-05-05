@@ -1,0 +1,6 @@
+
+Väljer ut alla youtubeid from 
+SELECT youtubeid FROM videogroup VG INNER JOIN `user` U ON VG.videoboardID = U.videoboardID WHERE U.username = "miaaim";
+
+SQL-kod för insättning av VBID
+INSERT INTO `favotube`.`videogroup` (`videoboardId`, `youtubeid`, `positionY`, `positionX`) VALUES ('1', 'l5XRoJhr_Us', '12', '12');

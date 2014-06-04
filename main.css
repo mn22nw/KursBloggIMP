@@ -137,6 +137,8 @@
 			color:#424a0f;
 			margin-top:30px;
 	}
+	.noBullet ul li{ 
+				list-style-type: none;}
 	/** CSS för mobila enheter*
 ---------------------------------------------------------------------- */
 @media screen and (max-width:480px) 
